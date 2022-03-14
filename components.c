@@ -9,11 +9,7 @@
 #define ABS(x)    ( (x) <= 0 ? 0-(x) : (x) )
 
 
-//--------------------------------------------------
-//--------------------------------------------------
-// You must modify this disjoint set implementation
-//--------------------------------------------------
-//--------------------------------------------------
+
 double Gaussian_Distribution(int n,int sigma)
 {
 
@@ -253,9 +249,7 @@ void run(const char *infile, const char *outpre, int canny_thresh, int canny_blu
 	SaveGrayPng(edges, str, rows, cols);
 
 
-	//
-	// Add your code here ....
-	//
+	
 
 	struct DisjointSet **image_pixels = Disjointmalloc2d_array(rows,cols);
 
